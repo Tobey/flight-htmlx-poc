@@ -8,10 +8,10 @@ install:
 	npm install --prefix frontend
 
 deploy-db:
-	cd infra && cdk bootstrap && cdk deploy --require-approval never
+	cd infra && poetry run cdk bootstrap && poetry run cdk deploy --require-approval never
 
 destroy-db:
-	cd infra && cdk destroy --force
+	cd infra && poetry run cdk destroy --force
 
 fixtures:
 	poetry run python app/write_fixtures.py

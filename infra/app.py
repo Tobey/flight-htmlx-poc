@@ -6,7 +6,7 @@ import aws_cdk as cdk
 from infra.infra_stack import InfraStack
 
 app = cdk.App()
-env = cdk.Environment(account=os.getenv("AWS_ACCOUNT_ID", "851429104527"), region=os.getenv("AWS_REGION", "eu-west-2"))
+env = cdk.Environment(account=os.getenv("AWS_ACCOUNT_ID"), region=os.getenv("AWS_REGION"))
 InfraStack(app, "InfraStack", env=env,
     # If you don't specify 'env', this stack will be environment-agnostic.
     # Account/Region-dependent features and cxontext lookups will not work,
