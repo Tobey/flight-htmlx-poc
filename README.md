@@ -1,5 +1,7 @@
 # Flight App - Quick Setup
 
+<img width="984" alt="Screenshot 2025-02-01 at 13 34 12" src="https://github.com/user-attachments/assets/70644f6b-2a6c-4fd9-9821-d1f82584c2e4" />
+
 ### Install dependencies FE/BE
 ```
 make install
@@ -29,3 +31,5 @@ AWS_DEFAULT_REGION=<eu> ... make run-be
 ```
 make run-fe
 ```
+
+
